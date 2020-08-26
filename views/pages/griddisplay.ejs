@@ -1,0 +1,43 @@
+<div class="x">
+<br>
+      <br>
+      <h1 class=" text-center display-5 mt-0 font-weight-bold text-shadow">LIST OF HOUSES
+      </h1>
+      <hr>
+      <div class="container " >
+         <div class="row">
+            <% for(var i =0; i < list.length; i++){ %>
+               <div class="col-lg-3 col-md-6 col-xs-6 col-sm-6" style="margin-bottom: 20px;" >
+                  <div class="card card-list">
+                     <a href="#">
+                        <span class="badge badge-success">For Sale</span>
+                        <img class="card-img-top" src="<%= list[i].Imageurl  %> " alt="Card image cap">
+                        <div class="card-body">
+                           <h5 class="card-title"><%= list[i].Location  %> </h5>
+                           <h6 class="card-subtitle mb-2 text-muted"><i class="mdi mdi-home-map-marker"></i> 127 Kent
+                              Sreet, Sydny, NEW 2000
+                           </h6>
+                           <div class="review-block-rate">
+                              <i class="mdi mdi-star"></i>
+                              <i class="mdi mdi-star"></i>
+                              <i class="mdi mdi-star"></i>
+                              <i class="mdi mdi-star-outline"></i>
+                              <i class="mdi mdi-star-outline"></i>
+                              <span class="badge-pill badge-success ml-2">3.2</span>
+                           </div>
+                           <h2 class="text-success mb-0 mt-3">
+                              £ <%= list[i].value %> <small>Pounds</small>
+                           </h2>
+                        </div>
+                        <div class="card-footer">
+                           <span><i class="mdi mdi-sofa"></i> Beds : <strong>3</strong></span>
+                           <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>2</strong></span>
+                           <span><i class="mdi mdi-move-resize-variant"></i> Area : <strong>587 sq ft</strong></span>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            <%    }     %>
+         </div>
+      </div>
+      </div>

@@ -1,0 +1,64 @@
+<br>   
+<div class="row container">
+    <br>
+  
+    <div class="col-xl-7 col-lg-7 ">
+        <% for(var x=0; x < 1; x++){ %>
+            <div class="card card-list ">
+                <a href="#">
+                   <span class="badge badge-success">For Sale</span>
+                   <img class="card-img-top" style="height: 300px;" src="<%= list[x].Imageurl  %> " alt="Card image cap">
+                   <div class="card-body">
+                      <h5 class="card-title"><%= list[x].Location  %> </h5>
+                      <h6 class="card-subtitle mb-2 text-muted"><i class="mdi mdi-home-map-marker"></i> 127 Kent
+                         Sreet, Sydny, NEW 2000
+                      </h6>
+                      <div class="review-block-rate">
+                         <i class="mdi mdi-star"></i>
+                         <i class="mdi mdi-star"></i>
+                         <i class="mdi mdi-star"></i>
+                         <i class="mdi mdi-star-outline"></i>
+                         <i class="mdi mdi-star-outline"></i>
+                         <span class="badge-pill badge-success ml-2">3.2</span>
+                      </div>
+                      <h2 class="text-success mb-0 mt-3">
+                         £ <%= list[x].value %> <small>Pounds</small>
+                      </h2>
+                   </div>
+                   <div class="card-footer">
+                      <span><i class="mdi mdi-sofa"></i> Beds : <strong>3</strong></span>
+                      <span><i class="mdi mdi-scale-bathroom"></i> Baths : <strong>2</strong></span>
+                      <span><i class="mdi mdi-move-resize-variant"></i> Area : <strong>587 sq ft</strong></span>
+                   </div>
+                </a>
+             </div>
+          
+      <%  } %>
+
+    </div>
+    <div class="col-xl-5 col-lg-5  ">
+       
+        <div class="mr-auto" style="height: 200px;" >
+            <% for(var x=1; x < 2; x++){ %>
+                <div class="card card-list ">
+                    <a href="#">
+                       <span class="badge badge-success">For Sale</span>
+                       <img class="card-img-top" style="height: 150px;" src="<%= list[x].Imageurl  %> " alt="Card image cap">
+                       <div class="card-body">
+                          <h5 class="card-title"><%= list[x].Location  %> </h5>
+                         
+                          
+                       </div>
+                      
+                    </a>
+                 </div>
+              
+          <%  } %>
+
+        </div>
+       
+        
+
+    </div>
+
+</div>
